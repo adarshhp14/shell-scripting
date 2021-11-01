@@ -17,3 +17,5 @@ echo Print this line
 # Also the input should be in quotes, preferably double quotes
 
 echo -e "Hello World\nWelcome"
+
+echo -e "word1\t\tword2"
