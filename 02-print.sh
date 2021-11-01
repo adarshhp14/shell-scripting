@@ -41,3 +41,4 @@ echo -e "\e[36mText in Cyan Color"
 ## Color always follows, When we enable color and its our responsibility to disable it as well, 0 col code is used to disable
 echo -e "\e[31mtext in red color\e[0m"
 echo Text in normal color
+echo -e "Normal \e[5mBlink"
