@@ -9,33 +9,32 @@ help:
             printf "%-15s %s\n" $$help_command $$help_info ; \
         done
 
+cart: ## setup Cart component
+	@bash components/cart.sh
 
-cart: git-pull ## Setup Cart Component
-	@sudo bash components/cart.sh
+catalogue: ## setup Catalogue component
+	@bash components/catalogue.sh
 
-catalogue: git-pull ## Setup Catalogue Component
-	@sudo bash components/catalogue.sh
+user: ## setup User component
+	@bash components/user.sh
 
-user: git-pull ## Setup User Component
-	@sudo bash components/user.sh
+shipping: ## setup Shipping component
+	@bash components/shipping.sh
 
-shipping: git-pull ## Setup Shipping Component
-	@sudo bash components/shipping.sh
+payment: ## setup Payment component
+	@bash components/payment.sh
 
-payment: git-pull ## Setup Payment Component
-	@sudo bash components/payment.sh
+frontend: ## setup Frontend component
+	@bash components/frontend.sh
 
-frontend: git-pull ## Setup Frontend Component
-	@sudo bash components/frontend.sh
+mysql: ## setup Mysql component
+	@bash components/mysql.sh
 
-mysql: git-pull ## Setup MySQL Component
-	@sudo bash components/mysql.sh
+redis: ## setup Redis component
+	@bash components/redis.sh
 
-redis: git-pull ## Setup Redis Component
-	@sudo bash components/redis.sh
+rabbitmq: ## setup RabbitMQ component
+	@bash components/cart.sh
 
-rabbitmq: git-pull ## Setup RabbitMQ Component
-	@sudo bash components/rabbitmq.sh
-
-mongodb: git-pull ## Setup MongoDB Component
-	@sudo bash components/mongodb.sh
+mongodb: ## setup MongoDB component
+	@bash components/mongodb.sh
