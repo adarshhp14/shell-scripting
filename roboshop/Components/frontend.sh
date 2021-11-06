@@ -38,4 +38,4 @@ Stat $?
 
 Print "Starting Nginx"
 systemctl restart nginx &>>$LOG
-Stat $?
+stat $?
